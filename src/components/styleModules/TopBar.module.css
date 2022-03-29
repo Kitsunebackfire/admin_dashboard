@@ -1,0 +1,7 @@
+.mainContainer {
+  border: 1px solid red;
+  background-color: pink;
+  height: 100%;
+
+  width: calc(100vw -200px);
+}

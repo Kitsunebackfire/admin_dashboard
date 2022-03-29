@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Styling from "./components/styleModules/App.module.css";
+import LeftSidebar from "./components/LeftSidebar";
+import TopBar from "./components/TopBar";
+import ProjectsContainer from "./components/ProjectsContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={Styling.App}>
+      <div className={Styling.leftNavbar}>
+        <LeftSidebar />
+      </div>
+      <div className={Styling.topBar}>
+        <TopBar />
+      </div>
+      <div className={Styling.projectsContainer}>
+        <ProjectsContainer />
+      </div>
     </div>
   );
 }
-
+//<div className={Styling.projectsContainer}>fsdfsds</div>
 export default App;

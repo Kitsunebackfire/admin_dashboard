@@ -1,0 +1,21 @@
+.App {
+  overflow-x: hidden;
+  display: grid;
+  grid-template-rows: 130px repeat(6, 1fr);
+  grid-template-columns: 200px repeat(6, 1fr);
+  height: 100vh;
+  width: 100vw;
+}
+
+.leftNavbar {
+  grid-area: 1/1 / span 7/2;
+}
+
+.topBar {
+  grid-area: 1/2/2 / span 6;
+}
+
+.projectsContainer {
+  grid-row: 2/8;
+  grid-column: 2/8;
+}
