@@ -1,5 +1,25 @@
 .mainContainer {
-  border: 1px solid rgb(24, 204, 1);
-  background-color: aqua;
+  background-color: rgb(200, 200, 200);
   height: 100%;
+  display: grid;
+  grid-template: 1fr/ 3.5fr 1.5fr;
+}
+
+.projectSection {
+  display: grid;
+  grid-template: 40px 1fr/ 1fr;
+}
+
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+}
+
+.projectCard {
+  border: 2px solid red;
+  margin: 5px;
+}
+
+.icon {
+  height: 30px;
 }

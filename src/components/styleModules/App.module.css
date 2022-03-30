@@ -1,7 +1,7 @@
 .App {
   overflow-x: hidden;
   display: grid;
-  grid-template-rows: 130px repeat(6, 1fr);
+  grid-template-rows: 144px repeat(6, 1fr);
   grid-template-columns: 200px repeat(6, 1fr);
   height: 100vh;
   width: 100vw;

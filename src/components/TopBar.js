@@ -34,14 +34,23 @@ function TopBar() {
         </div>
       </div>
       <div className={Styling.bottomRow}>
-        <img
-          className={Styling.userImageLarge}
-          alt="doberman headshot"
-          src={Dobie}
-        />
-        <div style={{ display: "inline" }}>Hi there,</div>
-        <div style={{ display: "inline" }}>
-          Stella Isabella Ivey (@stellaTheDobie)
+        <div className={Styling.welcomeContainer}>
+          <img
+            className={Styling.userImageLarge}
+            alt="doberman headshot"
+            src={Dobie}
+          />
+          <div className={Styling.hiThere} style={{ display: "inline" }}>
+            Hi there,
+          </div>
+          <div className={Styling.welcomeName} style={{ display: "inline" }}>
+            Stella Isabella Ivey (@stellaTheDobie)
+          </div>
+        </div>
+        <div className={Styling.buttonContainer}>
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
         </div>
       </div>
     </div>
