@@ -2,6 +2,64 @@
   border: 1px solid red;
   background-color: pink;
   height: 100%;
-
   width: calc(100vw -200px);
+  display: grid;
+  grid-template: 1fr 1.8fr/ 1fr;
+}
+
+.topRow {
+  display: grid;
+  grid-template: 1fr/ 2.8fr 1fr;
+}
+
+.searchContainer {
+  display: grid;
+  grid-template: 50px/ 50px auto;
+}
+
+.searchIcon {
+  justify-self: center;
+  align-self: center;
+  height: 25px;
+  width: auto;
+}
+
+.searchInput {
+  border-radius: 30px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 20px;
+  border: none;
+}
+
+.userContainer {
+  margin-left: 25px;
+  display: grid;
+  grid-template: 1fr / repeat(2, 80px) auto;
+}
+
+.alertIcon {
+  justify-self: center;
+  align-self: center;
+  height: 30px;
+  width: auto;
+}
+
+.userImageSmall {
+  justify-self: center;
+  align-self: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.userImageLarge {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+}
+
+.topRowName {
+  margin-left: 20px;
+  align-self: center;
 }

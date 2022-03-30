@@ -1,10 +1,49 @@
 import React from "react";
 import Styling from "./styleModules/TopBar.module.css";
+import Icon from "@mdi/react";
+import { mdiMagnify, mdiBellRingOutline } from "@mdi/js";
+import Dobie from "./photos/dobie.jpg";
 
 function TopBar() {
   return (
     <div className={Styling.mainContainer}>
-      Tofdssssssssssssssddddddddddddddddddddddddddddsssssssssspbar
+      <div className={Styling.topRow}>
+        <div className={Styling.searchContainer}>
+          <Icon
+            className={Styling.searchIcon}
+            path={mdiMagnify}
+            alt="search magnifying glass"
+          />
+          <input
+            className={Styling.searchInput}
+            id="searchInput"
+            name="searchInput"
+            type="text"
+          />
+        </div>
+        <div className={Styling.userContainer}>
+          <Icon className={Styling.alertIcon} path={mdiBellRingOutline} />
+          <img
+            className={Styling.userImageSmall}
+            alt="doberman headshot"
+            src={Dobie}
+          />
+          <div className={Styling.topRowName} style={{ display: "inline" }}>
+            Stella Isabella Ivey
+          </div>
+        </div>
+      </div>
+      <div className={Styling.bottomRow}>
+        <img
+          className={Styling.userImageLarge}
+          alt="doberman headshot"
+          src={Dobie}
+        />
+        <div style={{ display: "inline" }}>Hi there,</div>
+        <div style={{ display: "inline" }}>
+          Stella Isabella Ivey (@stellaTheDobie)
+        </div>
+      </div>
     </div>
   );
 }
