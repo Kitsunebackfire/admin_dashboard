@@ -7,7 +7,18 @@
 
 .projectSection {
   display: grid;
-  grid-template: 40px 1fr/ 1fr;
+  grid-template: auto 1fr/ 1fr;
+  overflow: scroll;
+}
+
+.projectTitle {
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 7.5px;
+  justify-self: flex-start;
+  border: 1px solid red;
 }
 
 .projectContainer {
@@ -15,11 +26,41 @@
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 }
 
-.projectCard {
+.projectCardContainer {
   border: 2px solid red;
-  margin: 5px;
+  background-color: rgb(255, 161, 161);
+  border-radius: 17px;
+  margin: 7.5px 15px;
+  padding: 0 15px;
+  display: flex;
+}
+
+.projectCard {
+  background-color: aquamarine;
+
+  width: 100%;
+  padding: 10px;
+}
+
+.projectCardTitle {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.projectSummary {
+  line-height: 1.4rem;
+  text-indent: 20px;
+  font-size: 1rem;
+  margin-top: 10px;
+  padding-bottom: 80px;
+}
+
+.projectIconContainer {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .icon {
   height: 30px;
+  margin: 3px;
 }

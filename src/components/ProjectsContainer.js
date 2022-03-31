@@ -54,29 +54,33 @@ function ProjectsContainer() {
         <div className={Styling.projectTitle}>Your Projects</div>
         <div className={Styling.projectContainer}>
           {projects.map((project) => (
-            <div className={Styling.projectCard} key={project.id}>
-              <div>{project.title}</div>
-              <div>{project.summary}</div>
-              <Icon
-                className={Styling.icon}
-                path={mdiStarPlusOutline}
-                alt="star"
-              />
-              <Icon
-                className={Styling.icon}
-                path={mdiDeleteOutline}
-                alt="delete trashcan"
-              />
-              <Icon
-                className={Styling.icon}
-                path={mdiShareVariant}
-                alt="share"
-              />
+            <div className={Styling.projectCardContainer} key={project.id}>
+              <div className={Styling.projectCard}>
+                <div className={Styling.projectCardTitle}>{project.title}</div>
+                <div className={Styling.projectSummary}>{project.summary}</div>
+                <div className={Styling.projectIconContainer}>
+                  <Icon
+                    className={Styling.icon}
+                    path={mdiStarPlusOutline}
+                    alt="star"
+                  />
+                  <Icon
+                    className={Styling.icon}
+                    path={mdiDeleteOutline}
+                    alt="delete trashcan"
+                  />
+                  <Icon
+                    className={Styling.icon}
+                    path={mdiShareVariant}
+                    alt="share"
+                  />
+                </div>
+              </div>
             </div>
           ))}
         </div>
-        <div className={Styling.rightSideContainer}></div>
       </div>
+      <div className={Styling.rightSideContainer}>right side</div>
     </div>
   );
 }
