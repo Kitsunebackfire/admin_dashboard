@@ -23,7 +23,7 @@ function LeftSidebar() {
           path={mdiViewDashboard}
           alt="dashboard"
         />
-        <div className={Styling.title}>Title</div>
+        <div className={Styling.title}>Dashboard</div>
       </div>
 
       <div className={Styling.generalNavContainer}>

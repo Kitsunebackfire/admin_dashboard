@@ -1,5 +1,5 @@
 .mainContainer {
-  background-color: pink;
+  background-color: rgb(255, 255, 255);
   height: 100%;
   width: calc(100vw -200px);
   display: grid;
@@ -25,11 +25,16 @@
 }
 
 .searchInput {
+  padding-left: 15px;
   border-radius: 30px;
   margin-top: 16px;
-
+  background-color: rgb(245, 232, 246);
   margin-right: 20px;
   border: none;
+}
+
+.searchInput:focus-visible {
+  outline: none;
 }
 
 .userContainer {
@@ -98,10 +103,19 @@
 }
 
 .buttonContainer button {
+  background-color: pink;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
   border: none;
-  width: 105px;
-  height: 35px;
+  width: 108px;
+  height: 40px;
   border-radius: 20px;
   cursor: pointer;
   margin: 5px;
+  box-shadow: 2px 2px 3px rgb(221, 214, 214);
+}
+
+.buttonContainer button:hover {
+  background-color: rgb(226, 170, 179);
 }

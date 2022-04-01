@@ -9,7 +9,10 @@
 
 .leftNavbar {
   grid-area: 1/1 / span 7/2;
+  height: fit-content;
   position: sticky;
+  top: 0;
+  height: 100vh;
 }
 
 .topBar {
@@ -17,6 +20,7 @@
 }
 
 .projectsContainer {
+  height: fit-content;
   grid-row: 2/8;
   grid-column: 2/8;
 }
